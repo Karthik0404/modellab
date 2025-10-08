@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <div>
+        <form class="center" action="/home/index">
+            <div class="login">
+                <label>Sign in</label>
+                <label>UserName</label>
+                <br>
+                <input type="text" id="uname" placeholder="Enter Username"/>
+                <label>Password</label>
+                <br>
+                <input type="password" id="pass" placeholder="Enter Password"/>
+
+            </div>
+        </form>
+        <script>
+            var uname=document.getElementById("uname").value;
+            var pass=document.getElementById("pass").value;
+            if(uname=="admin" && pass=="admin"){
+                alert("Login Successful");
+            }
+            else{
+                alert("Enter a Valid Username or Password");
+            }
+        </script>
+    </div>
+</body>
+</html>
